@@ -1,5 +1,5 @@
 .SUFFIXES: -seq -omp
-CC = icc
+CC = gcc
 
 OPENMP	 = -fopenmp
 CFLAGS   = -g -Wall -std=c99

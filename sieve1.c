@@ -23,18 +23,34 @@ int eratosthenes(int lastNumber)
   int sqrt_lN = sqrt(lastNumber);
   // 1. create a list of natural numbers 2, 3, 4, ... all of them initially marked as potential primes
   char * isPrime = (char *) malloc((lastNumber+1) * sizeof(char));
+  
+  #pragma omp parallel
+  #pragma omp single
+  #pragma omp taskloop
   for (int i = 0; i <= lastNumber; i++) isPrime[i] = 1;
 
   // 2. Starting from i=2, the first unmarked number on the list ...
-  for (int i = 2; i <= sqrt_lN; i++)
-  //for (int i = 2; i*i <= lastNumber; i++)
+  
+  for (int i = 2; i <= sqrt_lN; i++){
+        //for (int i = 2; i*i <= lastNumber; i++)
     // ... find the smallest number greater or equal than i that is unmarked 
-    if (isPrime[i])
+    if (isPrime[i]){
+        #pragma omp parallel
+        #pragma omp single
+        #pragma omp taskloop
+        for (int j = i*i; j <= lastNumber; j += i){
+            isPrime[j] = 0;
+        }
+    }
       // 3. Mark all multiples of i between i^2 and lastNumber
-      for (int j = i*i; j <= lastNumber; j += i) isPrime[j] = 0;
+      
+  }
+
 
   // 4. The unmarked numbers are primes, count primes
+  //#pragma omp parallel for
   for (int i = 2; i <= lastNumber; i++) 
+    //#pragma omp atomic
 	found += isPrime[i];
 
   // 5. We are done with the isPrime array, free it
