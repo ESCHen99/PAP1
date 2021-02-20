@@ -1,0 +1,253 @@
+make: 'sieve1-seq' is up to date.
+make: 'sieve1-omp' is up to date.
+Executing sieve1-seq sequentially
+Run 0...Elapsed time = 5.29
+Run 1...Elapsed time = 5.30
+Run 2...Elapsed time = 5.33
+ELAPSED TIME MIN OF 3 EXECUTIONS =5.29
+
+sieve1-omp 100000000 1 24 3
+Starting OpenMP executions...
+Executing sieve1-omp with 1 threads
+Run 0...Elapsed time = 5.31
+Run 1...Elapsed time = 5.30
+Run 2...Elapsed time = 5.30
+ELAPSED TIME MIN OF 3 EXECUTIONS =5.30
+
+Executing sieve1-omp with 2 threads
+Run 0...Elapsed time = 3.63
+Run 1...Elapsed time = 3.75
+Run 2...Elapsed time = 3.53
+ELAPSED TIME MIN OF 3 EXECUTIONS =3.53
+
+Executing sieve1-omp with 3 threads
+Run 0...Elapsed time = 2.62
+Run 1...Elapsed time = 2.71
+Run 2...Elapsed time = 2.70
+ELAPSED TIME MIN OF 3 EXECUTIONS =2.62
+
+Executing sieve1-omp with 4 threads
+Run 0...Elapsed time = 2.39
+Run 1...Elapsed time = 2.36
+Run 2...Elapsed time = 2.37
+ELAPSED TIME MIN OF 3 EXECUTIONS =2.36
+
+Executing sieve1-omp with 5 threads
+Run 0...Elapsed time = 2.11
+Run 1...Elapsed time = 2.11
+Run 2...Elapsed time = 2.11
+ELAPSED TIME MIN OF 3 EXECUTIONS =2.11
+
+Executing sieve1-omp with 6 threads
+Run 0...Elapsed time = 1.62
+Run 1...Elapsed time = 1.93
+Run 2...Elapsed time = 1.92
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.62
+
+Executing sieve1-omp with 7 threads
+Run 0...Elapsed time = 1.82
+Run 1...Elapsed time = 1.75
+Run 2...Elapsed time = 1.80
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.75
+
+Executing sieve1-omp with 8 threads
+Run 0...Elapsed time = 1.72
+Run 1...Elapsed time = 1.70
+Run 2...Elapsed time = 1.71
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.70
+
+Executing sieve1-omp with 9 threads
+Run 0...Elapsed time = 1.64
+Run 1...Elapsed time = 1.64
+Run 2...Elapsed time = 1.63
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.63
+
+Executing sieve1-omp with 10 threads
+Run 0...Elapsed time = 1.56
+Run 1...Elapsed time = 1.56
+Run 2...Elapsed time = 1.57
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.56
+
+Executing sieve1-omp with 11 threads
+Run 0...Elapsed time = 1.51
+Run 1...Elapsed time = 1.49
+Run 2...Elapsed time = 1.47
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.47
+
+Executing sieve1-omp with 12 threads
+Run 0...Elapsed time = 1.39
+Run 1...Elapsed time = 1.39
+Run 2...Elapsed time = 1.45
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.39
+
+Executing sieve1-omp with 13 threads
+Run 0...Elapsed time = 1.44
+Run 1...Elapsed time = 1.40
+Run 2...Elapsed time = 1.39
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.39
+
+Executing sieve1-omp with 14 threads
+Run 0...Elapsed time = 1.33
+Run 1...Elapsed time = 1.34
+Run 2...Elapsed time = 1.34
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.33
+
+Executing sieve1-omp with 15 threads
+Run 0...Elapsed time = 1.27
+Run 1...Elapsed time = 1.26
+Run 2...Elapsed time = 1.31
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.26
+
+Executing sieve1-omp with 16 threads
+Run 0...Elapsed time = 1.27
+Run 1...Elapsed time = 1.24
+Run 2...Elapsed time = 1.24
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.24
+
+Executing sieve1-omp with 17 threads
+Run 0...Elapsed time = 1.20
+Run 1...Elapsed time = 1.28
+Run 2...Elapsed time = 1.18
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.18
+
+Executing sieve1-omp with 18 threads
+Run 0...Elapsed time = 1.17
+Run 1...Elapsed time = 1.17
+Run 2...Elapsed time = 1.19
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.17
+
+Executing sieve1-omp with 19 threads
+Run 0...Elapsed time = 1.16
+Run 1...Elapsed time = 1.17
+Run 2...Elapsed time = 1.13
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.13
+
+Executing sieve1-omp with 20 threads
+Run 0...Elapsed time = 1.10
+Run 1...Elapsed time = 1.11
+Run 2...Elapsed time = 1.10
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.10
+
+Executing sieve1-omp with 21 threads
+Run 0...Elapsed time = 1.15
+Run 1...Elapsed time = 1.06
+Run 2...Elapsed time = 1.08
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.06
+
+Executing sieve1-omp with 22 threads
+Run 0...Elapsed time = 1.05
+Run 1...Elapsed time = 1.06
+Run 2...Elapsed time = 1.07
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.05
+
+Executing sieve1-omp with 23 threads
+Run 0...Elapsed time = 1.06
+Run 1...Elapsed time = 1.00
+Run 2...Elapsed time = 1.06
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.00
+
+Executing sieve1-omp with 24 threads
+Run 0...Elapsed time = 1.03
+Run 1...Elapsed time = 1.03
+Run 2...Elapsed time = 1.03
+ELAPSED TIME MIN OF 3 EXECUTIONS =1.03
+
+Resultat de l'experiment (tambe es troben a  ./elapsed.txt  i  ./speedup.txt  )
+#threads	Elapsed min
+2   3.05
+3   2.65
+4   2.42
+5   1.72
+6   1.59
+1   5.30
+7   1.71
+8   1.44
+2   3.53
+9   1.51
+10   1.58
+3   2.62
+11   1.49
+12   1.41
+4   2.36
+13   1.30
+5   2.11
+14   1.38
+15   1.24
+6   1.62
+16   1.23
+7   1.75
+17   1.19
+18   1.16
+8   1.70
+19   1.12
+9   1.63
+20   1.12
+10   1.56
+21   1.06
+22   1.09
+11   1.47
+23   1.02
+12   1.39
+24   1.01
+13   1.39
+14   1.33
+15   1.26
+16   1.24
+17   1.18
+18   1.17
+19   1.13
+20   1.10
+21   1.06
+22   1.05
+23   1.00
+24   1.03
+
+#threads	Speedup
+2   1.72786885245901639344
+3   1.98867924528301886792
+4   2.17768595041322314049
+5   3.06395348837209302325
+6   3.31446540880503144654
+1   .99811320754716981132
+7   3.08187134502923976608
+8   3.65972222222222222222
+2   1.49858356940509915014
+9   3.49006622516556291390
+10   3.33544303797468354430
+3   2.01908396946564885496
+11   3.53691275167785234899
+12   3.73758865248226950354
+4   2.24152542372881355932
+13   4.05384615384615384615
+5   2.50710900473933649289
+14   3.81884057971014492753
+15   4.25000000000000000000
+6   3.26543209876543209876
+16   4.28455284552845528455
+7   3.02285714285714285714
+17   4.42857142857142857142
+18   4.54310344827586206896
+8   3.11176470588235294117
+19   4.70535714285714285714
+9   3.24539877300613496932
+20   4.70535714285714285714
+10   3.39102564102564102564
+21   4.97169811320754716981
+22   4.83486238532110091743
+11   3.59863945578231292517
+23   5.16666666666666666666
+12   3.80575539568345323741
+24   5.21782178217821782178
+13   3.80575539568345323741
+14   3.97744360902255639097
+15   4.19841269841269841269
+16   4.26612903225806451612
+17   4.48305084745762711864
+18   4.52136752136752136752
+19   4.68141592920353982300
+20   4.80909090909090909090
+21   4.99056603773584905660
+22   5.03809523809523809523
+23   5.29000000000000000000
+24   5.13592233009708737864
+
