@@ -26,25 +26,26 @@ int eratosthenes(int lastNumber)
   
   #pragma omp parallel
   #pragma omp single
-  #pragma omp taskloop
-  for (int i = 0; i <= lastNumber; i++) isPrime[i] = 1;
+  {
+    #pragma omp taskloop
+    for (int i = 0; i <= lastNumber; i++) isPrime[i] = 1;
 
-  // 2. Starting from i=2, the first unmarked number on the list ...
-  
-  for (int i = 2; i <= sqrt_lN; i++){
-        //for (int i = 2; i*i <= lastNumber; i++)
-    // ... find the smallest number greater or equal than i that is unmarked 
-    if (isPrime[i]){
-        #pragma omp parallel
-        #pragma omp single
-        #pragma omp taskloop
-        for (int j = i*i; j <= lastNumber; j += i){
-            isPrime[j] = 0;
+    // 2. Starting from i=2, the first unmarked number on the list ...
+    
+    for (int i = 2; i <= sqrt_lN; i++){
+            //for (int i = 2; i*i <= lastNumber; i++)
+        // ... find the smallest number greater or equal than i that is unmarked 
+        if (isPrime[i]){
+            #pragma omp taskloop
+            for (int j = i*i; j <= lastNumber; j += i){
+                isPrime[j] = 0;
+            }
         }
+        // 3. Mark all multiples of i between i^2 and lastNumber
+        
     }
-      // 3. Mark all multiples of i between i^2 and lastNumber
-      
   }
+ 
 
 
   // 4. The unmarked numbers are primes, count primes
